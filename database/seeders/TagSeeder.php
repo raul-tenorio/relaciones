@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Image;
+use App\Models\Tag;
 
-class ImageSeeder extends Seeder
+class TagSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,7 @@ class ImageSeeder extends Seeder
      */
     public function run()
     {
-        Image::factory()->count(4)->create();
+        Tag::factory()->count(5)->create();
+
     }
 }

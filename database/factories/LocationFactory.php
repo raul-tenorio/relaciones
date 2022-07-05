@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Post>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Location>
  */
-class PostFactory extends Factory
+class LocationFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,10 +17,7 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'nombre'=> $this->faker->sentence,
-            'category_id'=> rand(1,4),
-            'user_id'=> rand(1,5)
-
+            'pais'=> $this->faker->country
 
         ];
     }

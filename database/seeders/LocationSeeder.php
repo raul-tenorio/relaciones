@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Image;
+use App\Models\Location;
 
-class ImageSeeder extends Seeder
+class LocationSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class ImageSeeder extends Seeder
      */
     public function run()
     {
-        Image::factory()->count(4)->create();
+        Location::factory()->count(4)->create();
     }
 }
