@@ -76,7 +76,7 @@
                                 <h4 class="my-0 fw-normal">{{$user->name}}</h4>
                             </div>
                             <div class="card-body">
-                                <a href="{{route('profile',$user->id)}}" class="d-block bg-info text-white py-1 text-decoration-none">Más infromación</a>
+                                <a href="{{route('profile',$user->id)}}" class="d-block bg-info text-white py-1 text-decoration-none">Más información</a>
                             </div>
                         </div>
                     </div>
