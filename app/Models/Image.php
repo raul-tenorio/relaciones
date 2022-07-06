@@ -7,16 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
+
+    protected $guarded =[];
+
     use HasFactory;
-
-    protected $guarded = [];
-
-
+    
     // RELACIÓN POLIMÓRFICA DE UNO A UNO
     public function imageable()
     {
         return $this->morphTo();
     }
-
-
 }

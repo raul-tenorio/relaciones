@@ -9,13 +9,9 @@ class Group extends Model
 {
     use HasFactory;
 
-
-    // RELACIÓN DE MUCHOS A MUCHOS
+    // RELACIÓN DE MUCHOS A MUCHOS 
     public function users()
     {
         return $this->belongsToMany(User::class)->withTimestamps();
     }
-
-
-    
 }

@@ -9,14 +9,10 @@ class Level extends Model
 {
     use HasFactory;
 
-    
-        // RELACIÓN DE UNO A MUCHOS
-        public function users()
-        {
-            return $this->hasMany('App\Models\User');
-        }
 
-
-
-
+    // RELACIÓN DE UNO A MUCHOS
+    public function users()
+    {
+        return $this->hasMany('App\Models\User');
+    }
 }

@@ -16,7 +16,10 @@ class Profile extends Model
         return $this->belongsTo(User::class);
     }
 
-
-
+    // RELACIÓN DE UNO A UNO
+    public function location()
+    {
+        return $this->hasOne(Location::class);
+    }
 
 }
